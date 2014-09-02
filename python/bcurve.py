@@ -49,9 +49,9 @@ def quat_bezier_curve(p1, p2, p3, p4, samples=None):
   return ret
 
 def square_inter(p1, p2, p3, t):
-  p4 = p1 + t * (p2 - p1)
+  d = p1 + t * (p2 - p1)
   e = p2 + t * (p3 - p2)
-  return p4 + t * (e - p4)
+  return d + t * (e - d)
 
 def square_bezier_curve(p1, p2, p3, samples=None):
   if samples is None:
