@@ -118,7 +118,9 @@ def demo_bezier_rec():
         array([100,70]),
         array([140,100]),
         array([180,80]),
-        array([140,65]),
+        array([160,20]),
+        array([100,50]),
+        array([40,80]),
       ]
 
   line = bezier_rec(p)
